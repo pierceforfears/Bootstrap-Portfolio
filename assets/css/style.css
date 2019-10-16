@@ -1,12 +1,12 @@
 /* General styling ========================================== */ 
 
 /* Header overall */
-.row {
+header {
     font-family: 'Georgia', Times, 'Times New Roman', serif;
     background-color: #ffffff;
     border-bottom: 2px solid #cccccc;
     width: 100%;
-    height: 110px;
+    height: 117px;
     margin: 0;
     padding: 30px;
     position: fixed;
@@ -18,7 +18,7 @@
 }
 
 /* Title */
-h1 a {
+header .row .title a {
     background-color: #4aaaa5;
     text-decoration: none;
     display: inline;
@@ -32,7 +32,7 @@ h1 a {
     left: 15%;
 }
 
-h1 a:hover {
+.title a:hover {
     text-decoration: none;
     color: #ffffff;
 }
@@ -109,6 +109,10 @@ section {
     box-shadow: 0 0 5px #777777;
 }
 
+section p {
+    line-height: 1.5;
+}
+
 h2 {
     font-family: 'Georgia', Times, 'Times New Roman', serif;
     color: #4aaaa5;
@@ -139,6 +143,7 @@ footer {
     border-top: 10px solid #4aaaa5;
     color: #9e9e9e;
     box-shadow: 0 0  5px #777777;
+    z-index: 101;
 }
 
 /* Contact Form Styling */
@@ -212,70 +217,28 @@ textarea {
 
 /*
   These rules take effect when the browser's width
-  is either 768px or less.
+  is either 640px or less.
 */
-@media screen and (max-width: 768px) {
-    nav {
-        float: right;
-        display: block;
+@media screen and (max-width: 640px){
+    /* General */
+    body {
+        width: 640px;
     }
 
-    section {
-        width: 90%;
-    }
-     
-    .headshot {
-        margin-bottom: 20px;
+    .header {
+        padding: 17px 0;
     }
 
-    /* trying to build a hamburger menu
-        header {
-        padding: 0;
+    header .row .header .title a {
         width: 100%;
-    }
-
-    header ul {
-        float: right;
-        width: 40%;
-        display: none;
-        padding: 0;
-        position: relative;
-        top: 60px;
+        position: fixed;
         left: 0;
-    }
-
-    header ul.active {
-        display: block;
-    }
-
-    header ul li {
-        width: 100%;
-        top: 0;
-        display: block;
-        padding: 0;
-        margin: 0;
-        border: 1px solid #777777;
-    }
-
-    header ul li a {
-        width: 100%;
-        padding: 10px;
-        display: block;
         text-align: center;
-        color:  #777777;
-        background-color: #ffffff;
+        padding: 10px 0;
     }
 
+    .nav nav {
+        margin: 0 auto;
+    }
 
-     */
-
-
-
-
-    /* Contact form submit button - widening for smaller screens */
-    /* .btn-primary {
-        width: 98%;
-    } */
 }
-
-
