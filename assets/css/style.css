@@ -296,8 +296,11 @@ a {
         border-radius: 0;
     }
 
-    p {
+    .main{
         padding: 20px;
+    }
+    p {
+        padding: 5px 0;
     }
 
     h2 {
@@ -311,6 +314,12 @@ a {
     .image {
         width: 100%;
         border-radius: 0;
+    }
+    .github {
+        padding: 5px 0;
+    }
+    .connect {
+       padding: 0 20px; 
     }
 
 }
