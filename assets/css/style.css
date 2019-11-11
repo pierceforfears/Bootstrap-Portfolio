@@ -2,7 +2,7 @@
 
 /* Header overall */
 header {
-    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    font-family: 'Audiowide', 'Helvetica Neue', Helvetica, sans-serif;
     background-color: #ffffff;
     border-bottom: 2px solid #cccccc;
     width: 100%;
@@ -19,7 +19,7 @@ header {
 
 /* Title */
 header .row .title a {
-    background-color: #4aaaa5;
+    background-color: rgb(84, 125, 141);
     text-decoration: none;
     display: inline;
     color: #ffffff;
@@ -39,7 +39,7 @@ header .row .title a {
 
 /* Nav */
 ul li {
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-family: 'Encode Sans', 'Helvetica Neue', Helvetica, sans-serif;
     display: inline;
     color: #777777;
     /* margin: 10px; */
@@ -54,53 +54,16 @@ ul li a:hover {
     color: #777777;
 }
 
-/*  trying to build a hamburger menu
-.toggle {
-    display: block;
-    position: absolute;
-    right: 10px;
-    top: 0;
-    font-size: 50px;
-    padding: 0 5px;
-}
-.nav {
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    color: #777777;
-    display: inline;
-    margin: 10px;
-    position: fixed;
-    right: 0;   
-}
-
-.menu {
-    margin: 0 30px 0 0;
-}
-
-.menu li a {
-    text-decoration: none;
-    color: #777777;
-    margin: 0 10px;
-    line-height: 70px;
-}
-
-label {
-    margin: 0 40px 0 0;
-    font-size: 40px;
-    line-height: 70px;
-    display: none;
-}
-
- */
-
-
-
 /* Body styling ========================================== */
 body {
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-family: 'Encode Sans', 'Helvetica Neue', Helvetica, sans-serif;
     width: 960px;
     margin: 0 auto;
     color: #777777;
-    background-image: url("../images/light_honeycomb.png");
+    background-image: url("../images/radoslav-bali-tX6VQ4URDWU-unsplash.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    min-height: 100vh;
 }
 
 section {
@@ -115,8 +78,8 @@ section p {
 }
 
 h2 {
-    font-family: 'Georgia', Times, 'Times New Roman', serif;
-    color: #4aaaa5;
+    font-family: 'Encode Sans', 'Helvetica Neue', Helvetica, sans-serif;
+    color: rgb(84, 125, 141);
     font-size: 25px;
     font-weight: 600;
     border-bottom: 2px solid #cccccc;
@@ -133,7 +96,7 @@ h2 {
 
 /* Footer styling ========================================== */
 footer {
-    background-color: #666666;
+    background-color: #ffffff;
     width: 100%;
     margin: 0 auto;
     text-align: center;
@@ -141,7 +104,7 @@ footer {
     bottom: 0;
     left: 0;
     padding: 15px;
-    border-top: 10px solid #4aaaa5;
+    border-top: 10px solid rgb(84, 125, 141);
     color: #9e9e9e;
     box-shadow: 0 0  5px #777777;
     z-index: 101;
@@ -163,7 +126,7 @@ input {
 
  .btn-primary {
      color: #ffffff;
-     background-color: #4aaaa5;
+     background-color: rgb(84, 125, 141);
      border: none;
  }
 
@@ -185,9 +148,9 @@ textarea {
     overflow: hidden;
 }
 
-.wrapper p {
+/* .wrapper p {
     position: relative;
-    background-color: #4aaaa5;
+    background-color: rgb(84, 125, 141);
     color: #ffffff;
     text-align: center;
     height: 30px;
@@ -195,7 +158,7 @@ textarea {
     width: 400px;
     margin: 0 auto;
     display: inline-block;    
-}
+} */
 
 .box {
     position: relative;
@@ -210,9 +173,26 @@ textarea {
     left: 0;
 } 
 
+.description {
+    margin: auto;
+}
+
 .image {
     border-radius: 4px;
     box-shadow: 0 5px 5px #777777;
+    width: 400px;
+}
+
+a {
+    text-decoration: none;
+    color: #777777;
+}
+
+.portfolioTitle:hover,
+.connect a:hover,
+.github a:hover {
+    color: #777777;
+    text-decoration: underline;
 }
 
 /*
@@ -227,6 +207,7 @@ textarea {
 
     section {
         margin-left: 15px;
+        width: 90%;
     }
 
     .header {
@@ -243,7 +224,83 @@ textarea {
     }
 
     .nav nav {
+        margin: 40px 0;
+    }
+
+    .image {
+        width: 280px;
+    }
+    .description {
+        width: 100%;
+        margin: 0;
+        padding: 10px auto;
+    }
+    .wrapper .row {
+        margin: 0;
+    }
+
+}
+
+/*
+  These rules take effect when the browser's width
+  is either 640px or less.
+*/
+@media screen and (max-width: 640px){
+    /* General */
+    body {
+        width: 100%;
+    }
+
+    .main {
+        padding: 0;
+    }
+
+    section {
+        margin: 0;
+        padding: 120px 0;
+        width: 100%;
+    }
+
+    .header {
+        padding: 17px 0;
+    }
+
+    header .row .header .title a {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        text-align: center;
+        padding: 10px 0;
         margin: 0 auto;
+    }
+
+    .nav nav {
+        margin: 6px auto;
+    }
+
+    .nav ul {
+        padding: 0;
+    }
+
+    .headshot {
+        border-radius: 0;
+    }
+
+    p {
+        padding: 20px;
+    }
+
+    h2 {
+        padding: 20px;
+    }
+    .wrapper .box {
+        margin: 0;
+        padding: 10px 0;
+        border-radius: 0;
+    }
+    .image {
+        width: 100%;
+        border-radius: 0;
     }
 
 }
